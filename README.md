@@ -5,3 +5,4 @@
   - reflections are calculated recursively
 - Renders planes
 - Renders shadows
+!(spheres.png)
