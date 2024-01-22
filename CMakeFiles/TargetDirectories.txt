@@ -1,0 +1,10 @@
+C:/Users/timot/Documents/csce_441/hw5/SkeletonCode/build/CMakeFiles/Assignment5.dir
+C:/Users/timot/Documents/csce_441/hw5/SkeletonCode/build/CMakeFiles/INSTALL.dir
+C:/Users/timot/Documents/csce_441/hw5/SkeletonCode/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/timot/Documents/csce_441/hw5/SkeletonCode/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/timot/Documents/csce_441/glfw-3.3.8/debug/CMakeFiles/uninstall.dir
+C:/Users/timot/Documents/csce_441/glfw-3.3.8/debug/CMakeFiles/INSTALL.dir
+C:/Users/timot/Documents/csce_441/glfw-3.3.8/debug/CMakeFiles/ALL_BUILD.dir
+C:/Users/timot/Documents/csce_441/glfw-3.3.8/debug/src/CMakeFiles/update_mappings.dir
+C:/Users/timot/Documents/csce_441/glfw-3.3.8/debug/src/CMakeFiles/glfw.dir
+C:/Users/timot/Documents/csce_441/glfw-3.3.8/debug/src/CMakeFiles/INSTALL.dir
