@@ -30,10 +30,8 @@ glm::vec3 lookAt = glm::vec3(0.0f, 0.0f, 0.0f);
 glm::vec3 upV = glm::vec3(0.0f, 1.0f, 0.0f);
 float fovYScene = 45.0f;
 float focalDistScene = 1.0f;
-
 // bunny task
 std::vector<Triangle*> triangleVector;
-
 // flags for bunny task
 int showBunny = 0;
 
@@ -122,7 +120,7 @@ void LoadModel(char* name)
 				triangleVector.push_back(new Triangle(vertices_[0], vertices_[1], vertices_[2], normals_[0], normals_[1], normals_[2]));
 
 				index_offset += fv;
-				// per-face material (IGNORE)
+				// per-face material
 				shapes1[s].mesh.material_ids[f];
 			}
 		}

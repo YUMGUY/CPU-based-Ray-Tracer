@@ -7,13 +7,10 @@ Shape::Shape() :center({}), ka(glm::vec3(0.0f)), kd(glm::vec3(0.0f)), ks(glm::ve
 Shape::Shape(glm::vec3 center_ ,glm::vec3 ka_, glm::vec3 kd_, glm::vec3 ks_, glm::vec3 km_, float n_): center(center_), ka(ka_),
 kd(kd_), ks(ks_), km(km_), n(n_),t_value(0.0f),normalValue({})
 {
-
 }
+
 // return t value
 float Shape::Intersect(glm::vec3 origin, glm::vec3 ray, float t0, float t1, glm::vec3& normal_) {
-
-
-	// return t value
 	return 1.0f;
 }
 

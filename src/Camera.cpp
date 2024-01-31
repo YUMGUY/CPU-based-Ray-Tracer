@@ -49,6 +49,7 @@ glm::vec3 CalcRayColor(glm::vec3 origin, glm::vec3 ray, float t0, float t1, Scen
 		glm::vec3 color_ = recordedShape.ka; 
 		// t value set in Hit()
 		glm::vec3 intersectionPoint = origin + (recordedShape.t_value * ray);
+		// base case, hard limit set to depth of 4
 		if (depthCounter > 4) {
 			return color_;
 		}
@@ -63,10 +64,10 @@ glm::vec3 CalcRayColor(glm::vec3 origin, glm::vec3 ray, float t0, float t1, Scen
 			glm::vec3 shadowNormal;
 			// gives shadows
 			if (scene->Hit(intersectionPoint, Lvalue, epsilonValue, light_t_Value, &shadowRecord, shadowNormal) == false) {
-				// left side
+				// left side of equation
 				glm::vec3 diffuseV = recordedShape.kd * glm::max(0.0f, glm::dot(Lvalue, normalShape));
 				glm::vec3 Rvalue = 2.0f * ((glm::dot(Lvalue, normalShape)) * normalShape) - Lvalue;
-				// right side
+				// right side of equation
 				Rvalue = glm::normalize(Rvalue);
 				glm::vec3 Evalue = origin - intersectionPoint;
 				Evalue = glm::normalize(Evalue);
@@ -82,9 +83,7 @@ glm::vec3 CalcRayColor(glm::vec3 origin, glm::vec3 ray, float t0, float t1, Scen
 		++depthCounter;
 		glm::vec3 reflectRay = glm::reflect(ray, normalShape);
 		color_ = color_ + (recordedShape.km * CalcRayColor(intersectionPoint, reflectRay, epsilonValue, t1, scene, depthCounter));
-		////std::cout << color_.x << ",,, " << color_.y << ", " << color_.z << std::endl;
 		return color_;
-			//return glm::vec3(1.0f, 0.0f, 0.0f);
 	}
 	// background color
 	else {

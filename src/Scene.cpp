@@ -29,11 +29,10 @@ bool Scene::Hit(glm::vec3 origin, glm::vec3 ray, float t0, float t1, Shape* rec,
 	
 	// normal_ might have to be stored within the shapes normalValue
 	if (flag == 0) { // not the bunny
-		//std::cout << "here" << std::endl;
 		glm::vec3 intPoint = origin + (ray * min_t_Value);
+		// normal calculated based on what shape it is
 		normal_ = shapes.at(shapeIndex)->CalcNormalVector(intPoint);
 	}
-	 // a function overriding the Shape class function based on what shape it is
 
 
 	return hit;
