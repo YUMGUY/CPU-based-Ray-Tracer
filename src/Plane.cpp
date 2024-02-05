@@ -50,7 +50,7 @@ float Plane::Intersect(glm::vec3 origin, glm::vec3 ray, float t0, float t1, glm:
 	}
 
 }
-
+// Calculation of the Normal Vector for a Plane
 glm::vec3 Plane::CalcNormalVector(glm::vec3 intersectionPoint) {
 	return normalP;
 }

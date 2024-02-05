@@ -13,7 +13,7 @@ kd(kd_), ks(ks_), km(km_), n(n_),t_value(0.0f),normalValue({})
 float Shape::Intersect(glm::vec3 origin, glm::vec3 ray, float t0, float t1, glm::vec3& normal_) {
 	return 1.0f;
 }
-
+// Overloaded by Shape child classes
 glm::vec3 Shape::CalcNormalVector(glm::vec3 intersectionPoint) {
 	return { 0.0f, 0.0f, 0.0f };
 }

@@ -33,7 +33,7 @@ Camera::Camera(glm::vec3 eye_, glm::vec3 lookAt_, glm::vec3 up_, float fov_Y, fl
 }
 
 
-// helper functions
+// helper functions for creating a Ray
 glm::vec3 CalcRayColor(glm::vec3 origin, glm::vec3 ray, float t0, float t1, Scene* scene, int depthCounter) {
 	glm::vec3 rayColor = { 0,0,0 };
 	glm::vec3 Lvalue = glm::vec3(0.0f);
@@ -91,7 +91,7 @@ glm::vec3 CalcRayColor(glm::vec3 origin, glm::vec3 ray, float t0, float t1, Scen
 	}
 
 }
-
+// Renders Scene
 void Camera::TakePicture(Scene *scene, glm::vec3 eye_, glm::vec3 upVector)
 {
 	// construct camera frame

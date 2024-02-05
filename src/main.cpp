@@ -30,9 +30,9 @@ glm::vec3 lookAt = glm::vec3(0.0f, 0.0f, 0.0f);
 glm::vec3 upV = glm::vec3(0.0f, 1.0f, 0.0f);
 float fovYScene = 45.0f;
 float focalDistScene = 1.0f;
-// bunny task
+
 std::vector<Triangle*> triangleVector;
-// flags for bunny task
+
 int showBunny = 0;
 
 
@@ -141,9 +141,6 @@ void Init()
 
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	ClearFrameBuffer();
-
-	// For the Bunny Task, accept input 
-
 	// set up lights
 	Light* light1 = new Light(glm::vec3(0.0f, 3.0f, -2.0f), glm::vec3(0.2f, 0.2f, 0.2f));
 	Light* light2 = new Light(glm::vec3(-2.0f, 1.0f, 4.0f), glm::vec3(0.5f, 0.5f, 0.5f));

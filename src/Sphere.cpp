@@ -60,7 +60,7 @@ float Sphere::Intersect(glm::vec3 origin, glm::vec3 ray, float t0, float t1, glm
 	}
 
 }
-
+// Calculation of the Normal for a Sphere
 glm::vec3 Sphere::CalcNormalVector(glm::vec3 intersectionPoint) {
 	glm::vec3 normalValueCalc = glm::normalize(intersectionPoint - center);
 	return normalValueCalc;
